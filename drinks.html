@@ -13,7 +13,20 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="drinks.html">A Few Drinks</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-link active"><a class="nav-link" href="basic.html">Basic</a></li>
+        <li class="nav-link active"><a class="nav-link" href="Advanced.html">Advanced</a></li>
+      </ul>
+    </div>
+  </nav>
   <h1>Have a cup with Brady Cruickshank</h1>
+
   <div class="container">
     <div class="row">
       <div class="col-sm-2">C</div>
@@ -32,7 +45,9 @@
       <div class="col-md">Schnapps</div>
     </div>
   </div>
+
   <p>The drinks row breaks first because its class is "col-md" instead of "col-sm," which causes it to break at a larger screen size.</p>
+
   <div class="container">
     <img src="coke.png" class="img-fluid" alt="Coke can" height="400" width="400">
     <img src="rootbeer.webp" class="img-fluid" alt="Root beer bottles" height="400" width="400">
@@ -43,6 +58,7 @@
     <img src="rootbeer.webp" class="img-thumbnail" alt="Root beer bottles" height="400" width="400">
     <img src="icedtea.webp" class="img-thumbnail" alt="Iced tea" height="400" width="400">
   </div>
+
   <table class="table table-striped table-light table-hover table-bordered">
     <caption>Items starting with each letter</caption>
     <thead>
@@ -92,6 +108,29 @@
       </tr>
     </tbody>
   </table>
+
+  <div class="btn-toolbar" role="toolbar" aria-label="Buttons for each letter">
+    <div class="btn-group" role="group" aria-label="Buttons with success coloring">
+      <button type="button" class="btn btn-success">C</button>
+      <button type="button" class="btn btn-success">R</button>
+      <button type="button" class="btn btn-success">I</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Buttons with warning coloring">
+      <button type="button" class="btn btn-warning">U</button>
+      <button type="button" class="btn btn-warning">K</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Beerutton with danger coloring">
+      <button type="button" class="btn btn-danger">S</button>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">Dropdown</button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="basic.html">Basic</a></li>
+      <a class="dropdown-item" href="advanced.html">Advanced</a></li>
+    </div>
+  </div>
 
 
 </body>
